@@ -16,7 +16,7 @@
 	<link rel="alternate" type="application/rss+xml" title="Nicolas Lara &raquo; Feed" href="feed/">
 	<link rel="alternate" type="application/rss+xml" title="Nicolas Lara &raquo; Comments Feed" href="comments/feed/">
 	<script>
-		window._wpemojiSettings = { "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/", "ext": ".png", "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/", "svgExt": ".svg", "source": { "concatemoji": "\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.7.1" } };
+		window._wpemojiSettings = { "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/", "ext": ".png", "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/", "svgExt": ".svg", "source": { "concatemoji": "wp-includes\/js\/wp-emoji-release.min.js" } };
 		/*! This file is auto-generated */
 		!function (i, n) { var o, s, e; function c(e) { try { var t = { supportTests: e, timestamp: (new Date).valueOf() }; sessionStorage.setItem(o, JSON.stringify(t)) } catch (e) { } } function p(e, t, n) { e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0); var t = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data), r = (e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(n, 0, 0), new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data)); return t.every(function (e, t) { return e === r[t] }) } function u(e, t, n) { switch (t) { case "flag": return n(e, "🏳️‍⚧️", "🏳️​⚧️") ? !1 : !n(e, "🇺🇳", "🇺​🇳") && !n(e, "🏴󠁧󠁢󠁥󠁮󠁧󠁿", "🏴​󠁧​󠁢​󠁥​󠁮​󠁧​󠁿"); case "emoji": return !n(e, "🐦‍⬛", "🐦​⬛") }return !1 } function f(e, t, n) { var r = "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? new OffscreenCanvas(300, 150) : i.createElement("canvas"), a = r.getContext("2d", { willReadFrequently: !0 }), o = (a.textBaseline = "top", a.font = "600 32px Arial", {}); return e.forEach(function (e) { o[e] = t(a, e, n) }), o } function t(e) { var t = i.createElement("script"); t.src = e, t.defer = !0, i.head.appendChild(t) } "undefined" != typeof Promise && (o = "wpEmojiSettingsSupports", s = ["flag", "emoji"], n.supports = { everything: !0, everythingExceptFlag: !0 }, e = new Promise(function (e) { i.addEventListener("DOMContentLoaded", e, { once: !0 }) }), new Promise(function (t) { var n = function () { try { var e = JSON.parse(sessionStorage.getItem(o)); if ("object" == typeof e && "number" == typeof e.timestamp && (new Date).valueOf() < e.timestamp + 604800 && "object" == typeof e.supportTests) return e.supportTests } catch (e) { } return null }(); if (!n) { if ("undefined" != typeof Worker && "undefined" != typeof OffscreenCanvas && "undefined" != typeof URL && URL.createObjectURL && "undefined" != typeof Blob) try { var e = "postMessage(" + f.toString() + "(" + [JSON.stringify(s), u.toString(), p.toString()].join(",") + "));", r = new Blob([e], { type: "text/javascript" }), a = new Worker(URL.createObjectURL(r), { name: "wpTestEmojiSupports" }); return void (a.onmessage = function (e) { c(n = e.data), a.terminate(), t(n) }) } catch (e) { } c(n = f(s, u, p)) } t(n) }).then(function (e) { for (var t in e) n.supports[t] = e[t], n.supports.everything = n.supports.everything && n.supports[t], "flag" !== t && (n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && n.supports[t]); n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && !n.supports.flag, n.DOMReady = !1, n.readyCallback = function () { n.DOMReady = !0 } }).then(function () { return e }).then(function () { var e; n.supports.everything || (n.readyCallback(), (e = n.source || {}).concatemoji ? t(e.concatemoji) : e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji))) })) }((window, document), window._wpemojiSettings);
 	</script>
@@ -168,8 +168,7 @@
 		.wp-block-separator {
 			border: none;
 			border-bottom: 2px solid;
-			margin-left: auto;
-			margin-right: auto
+			margin-right: 0;
 		}
 
 		.wp-block-separator.has-alpha-channel-opacity {
@@ -2392,8 +2391,6 @@
 			z-index: 100000;
 		}
 	</style>
-	<link rel="stylesheet" id="contact-form-7-css"
-		href="wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.0" media="all">
 	<link rel="stylesheet" id="showfolio-parent-style-css" href="wp-content/themes/fotawp/style.css?ver=6.7.1"
 		media="all">
 	<link rel="stylesheet" id="slick-css-css"
@@ -2490,12 +2487,12 @@
 	<meta name="generator" content="WordPress 6.7.1">
 	<style id="website-builder-block-editor-inline-css"></style>
 	<script type="importmap"
-		id="wp-importmap">{"imports":{"@wordpress\/interactivity":"\/wp-includes\/js\/dist\/script-modules\/interactivity\/index.min.js?ver=06b8f695ef48ab2d9277"}}</script>
+		id="wp-importmap">{"imports":{"@wordpress\/interactivity":"wp-includes\/js\/dist\/script-modules\/interactivity\/index.min.js"}}</script>
 	<script type="module"
-		src="wp-includes/js/dist/script-modules/block-library/navigation/view.min.js?ver=8ff192874fc8910a284c"
+		src="wp-includes/js/dist/script-modules/block-library/navigation/view.min.js"
 		id="@wordpress/block-library/navigation/view-js-module"></script>
 	<link rel="modulepreload"
-		href="wp-includes/js/dist/script-modules/interactivity/index.min.js?ver=06b8f695ef48ab2d9277"
+		href="wp-includes/js/dist/script-modules/interactivity/index.min.js"
 		id="@wordpress/interactivity-js-modulepreload">
 	<style class="wp-fonts-local">
 		@font-face {
@@ -2503,7 +2500,7 @@
 			font-style: normal;
 			font-weight: 300 400 500 600 700 900;
 			font-display: fallback;
-			src: url('/wp-content/themes/showfolio/assets/fonts/albert-sans/AlbertSans-VariableFont_wght.ttf') format('truetype');
+			src: url('wp-content/themes/showfolio/assets/fonts/albert-sans/AlbertSans-VariableFont_wght.ttf') format('truetype');
 			font-stretch: normal;
 		}
 
@@ -2512,7 +2509,7 @@
 			font-style: italic;
 			font-weight: 300 400 500 600 700 900;
 			font-display: fallback;
-			src: url('/wp-content/themes/showfolio/assets/fonts/albert-sans/AlbertSans-Italic-VariableFont_wght.ttf') format('truetype');
+			src: url('wp-content/themes/showfolio/assets/fonts/albert-sans/AlbertSans-Italic-VariableFont_wght.ttf') format('truetype');
 			font-stretch: normal;
 		}
 
@@ -2521,7 +2518,7 @@
 			font-style: normal;
 			font-weight: 400;
 			font-display: fallback;
-			src: url('/wp-content/themes/showfolio/assets/fonts/allura/Allura-Regular.woff2') format('woff2');
+			src: url('wp-content/themes/showfolio/assets/fonts/allura/Allura-Regular.woff2') format('woff2');
 			font-stretch: normal;
 		}
 
@@ -2530,7 +2527,7 @@
 			font-style: normal;
 			font-weight: 300 400 500 600 700 900;
 			font-display: fallback;
-			src: url('/wp-content/themes/showfolio/assets/fonts/dancing_script/DancingScript-VariableFont_wght.ttf') format('truetype');
+			src: url('wp-content/themes/showfolio/assets/fonts/dancing_script/DancingScript-VariableFont_wght.ttf') format('truetype');
 			font-stretch: normal;
 		}
 
@@ -2539,7 +2536,7 @@
 			font-style: normal;
 			font-weight: 300 400 500 600 700 900;
 			font-display: fallback;
-			src: url('/wp-content/themes/showfolio/assets/fonts/dm-sans/DMSans-VariableFont_wght.ttf') format('truetype');
+			src: url('wp-content/themes/showfolio/assets/fonts/dm-sans/DMSans-VariableFont_wght.ttf') format('truetype');
 			font-stretch: normal;
 		}
 
@@ -2548,7 +2545,7 @@
 			font-style: italic;
 			font-weight: 300 400 500 600 700 900;
 			font-display: fallback;
-			src: url('/wp-content/themes/showfolio/assets/fonts/dm-sans/DMSans-Italic-VariableFont_wght.ttf') format('truetype');
+			src: url('wp-content/themes/showfolio/assets/fonts/dm-sans/DMSans-Italic-VariableFont_wght.ttf') format('truetype');
 			font-stretch: normal;
 		}
 
@@ -2557,7 +2554,7 @@
 			font-style: normal;
 			font-weight: 300 400 500 600 700 900;
 			font-display: fallback;
-			src: url('/wp-content/themes/showfolio/assets/fonts/hanken-grotesk/HankenGrotesk-VariableFont_wght.ttf') format('truetype');
+			src: url('wp-content/themes/showfolio/assets/fonts/hanken-grotesk/HankenGrotesk-VariableFont_wght.ttf') format('truetype');
 			font-stretch: normal;
 		}
 
@@ -2566,7 +2563,7 @@
 			font-style: italic;
 			font-weight: 300 400 500 600 700 900;
 			font-display: fallback;
-			src: url('/wp-content/themes/showfolio/assets/fonts/hanken-grotesk/HankenGrotesk-Italic-VariableFont_wght.ttf') format('truetype');
+			src: url('wp-content/themes/showfolio/assets/fonts/hanken-grotesk/HankenGrotesk-Italic-VariableFont_wght.ttf') format('truetype');
 			font-stretch: normal;
 		}
 
@@ -2575,7 +2572,7 @@
 			font-style: normal;
 			font-weight: 400;
 			font-display: fallback;
-			src: url('/wp-content/themes/showfolio/assets/fonts/ibm_plex_serif/IBMPlexSerif-Regular.woff2') format('woff2');
+			src: url('wp-content/themes/showfolio/assets/fonts/ibm_plex_serif/IBMPlexSerif-Regular.woff2') format('woff2');
 			font-stretch: normal;
 		}
 
@@ -2584,7 +2581,7 @@
 			font-style: normal;
 			font-weight: 500;
 			font-display: fallback;
-			src: url('/wp-content/themes/showfolio/assets/fonts/ibm_plex_serif/IBMPlexSerif-Medium.woff2') format('woff2');
+			src: url('wp-content/themes/showfolio/assets/fonts/ibm_plex_serif/IBMPlexSerif-Medium.woff2') format('woff2');
 			font-stretch: normal;
 		}
 
@@ -2593,7 +2590,7 @@
 			font-style: normal;
 			font-weight: 600;
 			font-display: fallback;
-			src: url('/wp-content/themes/showfolio/assets/fonts/ibm_plex_serif/IBMPlexSerif-SemiBold.woff2') format('woff2');
+			src: url('wp-content/themes/showfolio/assets/fonts/ibm_plex_serif/IBMPlexSerif-SemiBold.woff2') format('woff2');
 			font-stretch: normal;
 		}
 
@@ -2602,7 +2599,7 @@
 			font-style: normal;
 			font-weight: 700;
 			font-display: fallback;
-			src: url('/wp-content/themes/showfolio/assets/fonts/ibm_plex_serif/IBMPlexSerif-Bold.woff2') format('woff2');
+			src: url('wp-content/themes/showfolio/assets/fonts/ibm_plex_serif/IBMPlexSerif-Bold.woff2') format('woff2');
 			font-stretch: normal;
 		}
 
@@ -2611,7 +2608,7 @@
 			font-style: normal;
 			font-weight: 300 400 500 600 700;
 			font-display: fallback;
-			src: url('/wp-content/themes/showfolio/assets/fonts/inter/Inter-VariableFont_wght.ttf') format('truetype');
+			src: url('wp-content/themes/showfolio/assets/fonts/inter/Inter-VariableFont_wght.ttf') format('truetype');
 			font-stretch: normal;
 		}
 
@@ -2620,7 +2617,7 @@
 			font-style: normal;
 			font-weight: 300 400 500 600 700 900;
 			font-display: fallback;
-			src: url('/wp-content/themes/showfolio/assets/fonts/jost/Jost-VariableFont_wght.ttf') format('truetype');
+			src: url('wp-content/themes/showfolio/assets/fonts/jost/Jost-VariableFont_wght.ttf') format('truetype');
 			font-stretch: normal;
 		}
 
@@ -2629,7 +2626,7 @@
 			font-style: italic;
 			font-weight: 300 400 500 600 700 900;
 			font-display: fallback;
-			src: url('/wp-content/themes/showfolio/assets/fonts/jost/Jost-Italic-VariableFont_wght.ttf') format('truetype');
+			src: url('wp-content/themes/showfolio/assets/fonts/jost/Jost-Italic-VariableFont_wght.ttf') format('truetype');
 			font-stretch: normal;
 		}
 
@@ -2638,7 +2635,7 @@
 			font-style: normal;
 			font-weight: 300;
 			font-display: fallback;
-			src: url('/wp-content/themes/showfolio/assets/fonts/lato/Lato-Light.woff2') format('woff2');
+			src: url('wp-content/themes/showfolio/assets/fonts/lato/Lato-Light.woff2') format('woff2');
 			font-stretch: normal;
 		}
 
@@ -2647,7 +2644,7 @@
 			font-style: normal;
 			font-weight: 400;
 			font-display: fallback;
-			src: url('/wp-content/themes/showfolio/assets/fonts/lato/Lato-Regular.woff2') format('woff2');
+			src: url('wp-content/themes/showfolio/assets/fonts/lato/Lato-Regular.woff2') format('woff2');
 			font-stretch: normal;
 		}
 
@@ -2656,7 +2653,7 @@
 			font-style: normal;
 			font-weight: 700;
 			font-display: fallback;
-			src: url('/wp-content/themes/showfolio/assets/fonts/lato/Lato-Bold.woff2') format('woff2');
+			src: url('wp-content/themes/showfolio/assets/fonts/lato/Lato-Bold.woff2') format('woff2');
 			font-stretch: normal;
 		}
 
@@ -2665,7 +2662,7 @@
 			font-style: normal;
 			font-weight: 100 200 300 400 500 600 700 900;
 			font-display: fallback;
-			src: url('/wp-content/themes/showfolio/assets/fonts/league_spartan/LeagueSpartan-VariableFont_wght.ttf') format('truetype');
+			src: url('wp-content/themes/showfolio/assets/fonts/league_spartan/LeagueSpartan-VariableFont_wght.ttf') format('truetype');
 			font-stretch: normal;
 		}
 
@@ -2674,7 +2671,7 @@
 			font-style: normal;
 			font-weight: 300;
 			font-display: fallback;
-			src: url('/wp-content/themes/showfolio/assets/fonts/merriweather/Merriweather-Light.woff2') format('woff2');
+			src: url('wp-content/themes/showfolio/assets/fonts/merriweather/Merriweather-Light.woff2') format('woff2');
 			font-stretch: normal;
 		}
 
@@ -2683,7 +2680,7 @@
 			font-style: normal;
 			font-weight: 400;
 			font-display: fallback;
-			src: url('/wp-content/themes/showfolio/assets/fonts/merriweather/Merriweather-Regular.woff2') format('woff2');
+			src: url('wp-content/themes/showfolio/assets/fonts/merriweather/Merriweather-Regular.woff2') format('woff2');
 			font-stretch: normal;
 		}
 
@@ -2692,7 +2689,7 @@
 			font-style: normal;
 			font-weight: 700;
 			font-display: fallback;
-			src: url('/wp-content/themes/showfolio/assets/fonts/merriweather/Merriweather-Bold.woff2') format('woff2');
+			src: url('wp-content/themes/showfolio/assets/fonts/merriweather/Merriweather-Bold.woff2') format('woff2');
 			font-stretch: normal;
 		}
 
@@ -2701,7 +2698,7 @@
 			font-style: normal;
 			font-weight: 300 400 500 600 700 900;
 			font-display: fallback;
-			src: url('/wp-content/themes/showfolio/assets/fonts/montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+			src: url('wp-content/themes/showfolio/assets/fonts/montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
 			font-stretch: normal;
 		}
 
@@ -2710,7 +2707,7 @@
 			font-style: italic;
 			font-weight: 300 400 500 600 700 900;
 			font-display: fallback;
-			src: url('/wp-content/themes/showfolio/assets/fonts/montserrat/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
+			src: url('wp-content/themes/showfolio/assets/fonts/montserrat/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
 			font-stretch: normal;
 		}
 
@@ -2719,7 +2716,7 @@
 			font-style: normal;
 			font-weight: 300 400 500 600 700 900;
 			font-display: fallback;
-			src: url('/wp-content/themes/showfolio/assets/fonts/nunito/Nunito-VariableFont_wght.ttf') format('truetype');
+			src: url('wp-content/themes/showfolio/assets/fonts/nunito/Nunito-VariableFont_wght.ttf') format('truetype');
 			font-stretch: normal;
 		}
 
@@ -2728,7 +2725,7 @@
 			font-style: italic;
 			font-weight: 300 400 500 600 700 900;
 			font-display: fallback;
-			src: url('/wp-content/themes/showfolio/assets/fonts/nunito/Nunito-Italic-VariableFont_wght.ttf') format('truetype');
+			src: url('wp-content/themes/showfolio/assets/fonts/nunito/Nunito-Italic-VariableFont_wght.ttf') format('truetype');
 			font-stretch: normal;
 		}
 
@@ -2737,7 +2734,7 @@
 			font-style: normal;
 			font-weight: 300 400 500 600 700 900;
 			font-display: fallback;
-			src: url('/wp-content/themes/showfolio/assets/fonts/open-sans/OpenSans-VariableFont_wght.ttf') format('truetype');
+			src: url('wp-content/themes/showfolio/assets/fonts/open-sans/OpenSans-VariableFont_wght.ttf') format('truetype');
 			font-stretch: normal;
 		}
 
@@ -2746,7 +2743,7 @@
 			font-style: italic;
 			font-weight: 300 400 500 600 700 900;
 			font-display: fallback;
-			src: url('/wp-content/themes/fotawp/assets/fonts/open-sans/OpenSans-Italic-VariableFont_wght.ttf') format('truetype');
+			src: url('wp-content/themes/fotawp/assets/fonts/open-sans/OpenSans-Italic-VariableFont_wght.ttf') format('truetype');
 			font-stretch: normal;
 		}
 
@@ -2755,7 +2752,7 @@
 			font-style: normal;
 			font-weight: 300 400 500 600 700 900;
 			font-display: fallback;
-			src: url('/wp-content/themes/showfolio/assets/fonts/oswald/Oswald-VariableFont_wght.ttf') format('truetype');
+			src: url('wp-content/themes/showfolio/assets/fonts/oswald/Oswald-VariableFont_wght.ttf') format('truetype');
 			font-stretch: normal;
 		}
 
@@ -2764,7 +2761,7 @@
 			font-style: normal;
 			font-weight: 300 400 500 600 700 900;
 			font-display: fallback;
-			src: url('/wp-content/themes/showfolio/assets/fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+			src: url('wp-content/themes/showfolio/assets/fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
 			font-stretch: normal;
 		}
 
@@ -2773,7 +2770,7 @@
 			font-style: normal;
 			font-weight: 400;
 			font-display: fallback;
-			src: url('/wp-content/themes/showfolio/assets/fonts/pacifico/Pacifico-Regular.woff2') format('woff2');
+			src: url('wp-content/themes/showfolio/assets/fonts/pacifico/Pacifico-Regular.woff2') format('woff2');
 			font-stretch: normal;
 		}
 
@@ -2782,7 +2779,7 @@
 			font-style: normal;
 			font-weight: 300 400 500 600 700 900;
 			font-display: fallback;
-			src: url('/wp-content/themes/showfolio/assets/fonts/playfair-display/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+			src: url('wp-content/themes/showfolio/assets/fonts/playfair-display/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
 			font-stretch: normal;
 		}
 
@@ -2791,7 +2788,7 @@
 			font-style: italic;
 			font-weight: 300 400 500 600 700 900;
 			font-display: fallback;
-			src: url('/wp-content/themes/showfolio/assets/fonts/playfair-display/PlayfairDisplay-Italic-VariableFont_wght.ttf') format('truetype');
+			src: url('wp-content/themes/showfolio/assets/fonts/playfair-display/PlayfairDisplay-Italic-VariableFont_wght.ttf') format('truetype');
 			font-stretch: normal;
 		}
 
@@ -2800,7 +2797,7 @@
 			font-style: normal;
 			font-weight: 300;
 			font-display: fallback;
-			src: url('/wp-content/themes/showfolio/assets/fonts/poppins/Poppins-Light.woff2') format('woff2');
+			src: url('wp-content/themes/showfolio/assets/fonts/poppins/Poppins-Light.woff2') format('woff2');
 			font-stretch: normal;
 		}
 
@@ -2809,7 +2806,7 @@
 			font-style: normal;
 			font-weight: 400;
 			font-display: fallback;
-			src: url('/wp-content/themes/showfolio/assets/fonts/poppins/Poppins-Regular.woff2') format('woff2');
+			src: url('wp-content/themes/showfolio/assets/fonts/poppins/Poppins-Regular.woff2') format('woff2');
 			font-stretch: normal;
 		}
 
@@ -2818,7 +2815,7 @@
 			font-style: normal;
 			font-weight: 500;
 			font-display: fallback;
-			src: url('/wp-content/themes/showfolio/assets/fonts/poppins/Poppins-Medium.woff2') format('woff2');
+			src: url('wp-content/themes/showfolio/assets/fonts/poppins/Poppins-Medium.woff2') format('woff2');
 			font-stretch: normal;
 		}
 
@@ -2827,7 +2824,7 @@
 			font-style: normal;
 			font-weight: 600;
 			font-display: fallback;
-			src: url('/wp-content/themes/showfolio/assets/fonts/poppins/Poppins-SemiBold.woff2') format('woff2');
+			src: url('wp-content/themes/showfolio/assets/fonts/poppins/Poppins-SemiBold.woff2') format('woff2');
 			font-stretch: normal;
 		}
 
@@ -2836,7 +2833,7 @@
 			font-style: normal;
 			font-weight: 700;
 			font-display: fallback;
-			src: url('/wp-content/themes/showfolio/assets/fonts/poppins/Poppins-Bold.woff2') format('woff2');
+			src: url('wp-content/themes/showfolio/assets/fonts/poppins/Poppins-Bold.woff2') format('woff2');
 			font-stretch: normal;
 		}
 
@@ -2845,7 +2842,7 @@
 			font-style: normal;
 			font-weight: 300 400 500 600 700 900;
 			font-display: fallback;
-			src: url('/wp-content/themes/showfolio/assets/fonts/public_sans/PublicSans-VariableFont_wght.ttf') format('truetype');
+			src: url('wp-content/themes/showfolio/assets/fonts/public_sans/PublicSans-VariableFont_wght.ttf') format('truetype');
 			font-stretch: normal;
 		}
 
@@ -2854,7 +2851,7 @@
 			font-style: italic;
 			font-weight: 300 400 500 600 700 900;
 			font-display: fallback;
-			src: url('/wp-content/themes/showfolio/assets/fonts/public_sans/PublicSans-Italic-VariableFont_wght.ttf') format('truetype');
+			src: url('wp-content/themes/showfolio/assets/fonts/public_sans/PublicSans-Italic-VariableFont_wght.ttf') format('truetype');
 			font-stretch: normal;
 		}
 
@@ -2863,7 +2860,7 @@
 			font-style: normal;
 			font-weight: 300 400 500 600 700 900;
 			font-display: fallback;
-			src: url('/wp-content/themes/showfolio/assets/fonts/quicksand/Quicksand-VariableFont_wght.ttf') format('truetype');
+			src: url('wp-content/themes/showfolio/assets/fonts/quicksand/Quicksand-VariableFont_wght.ttf') format('truetype');
 			font-stretch: normal;
 		}
 
@@ -2872,7 +2869,7 @@
 			font-style: normal;
 			font-weight: 300 400 500 600 700 900;
 			font-display: fallback;
-			src: url('/wp-content/themes/showfolio/assets/fonts/raleway/Raleway-VariableFont_wght.ttf') format('truetype');
+			src: url('wp-content/themes/showfolio/assets/fonts/raleway/Raleway-VariableFont_wght.ttf') format('truetype');
 			font-stretch: normal;
 		}
 
@@ -2881,7 +2878,7 @@
 			font-style: italic;
 			font-weight: 300 400 500 600 700 900;
 			font-display: fallback;
-			src: url('/wp-content/themes/showfolio/assets/fonts/raleway/Raleway-Italic-VariableFont_wght.ttf') format('truetype');
+			src: url('wp-content/themes/showfolio/assets/fonts/raleway/Raleway-Italic-VariableFont_wght.ttf') format('truetype');
 			font-stretch: normal;
 		}
 
@@ -2890,7 +2887,7 @@
 			font-style: normal;
 			font-weight: 300 400 500 600 700 900;
 			font-display: fallback;
-			src: url('/wp-content/themes/showfolio/assets/fonts/roboto_condensed/RobotoCondensed-VariableFont_wght.ttf') format('truetype');
+			src: url('wp-content/themes/showfolio/assets/fonts/roboto_condensed/RobotoCondensed-VariableFont_wght.ttf') format('truetype');
 			font-stretch: normal;
 		}
 
@@ -2899,7 +2896,7 @@
 			font-style: italic;
 			font-weight: 300 400 500 600 700 900;
 			font-display: fallback;
-			src: url('/wp-content/themes/showfolio/assets/fonts/roboto_condensed/RobotoCondensed-Italic-VariableFont_wght.ttf') format('truetype');
+			src: url('wp-content/themes/showfolio/assets/fonts/roboto_condensed/RobotoCondensed-Italic-VariableFont_wght.ttf') format('truetype');
 			font-stretch: normal;
 		}
 
@@ -2908,7 +2905,7 @@
 			font-style: normal;
 			font-weight: 300 400 500 600 700 900;
 			font-display: fallback;
-			src: url('/wp-content/themes/showfolio/assets/fonts/space_grotesk/SpaceGrotesk-VariableFont_wght.ttf') format('truetype');
+			src: url('wp-content/themes/showfolio/assets/fonts/space_grotesk/SpaceGrotesk-VariableFont_wght.ttf') format('truetype');
 			font-stretch: normal;
 		}
 
@@ -2917,7 +2914,7 @@
 			font-style: normal;
 			font-weight: 300 400 500 600 700 900;
 			font-display: fallback;
-			src: url('/wp-content/themes/showfolio/assets/fonts/syne/Syne-VariableFont_wght.ttf') format('truetype');
+			src: url('wp-content/themes/showfolio/assets/fonts/syne/Syne-VariableFont_wght.ttf') format('truetype');
 			font-stretch: normal;
 		}
 	</style>
@@ -2925,14 +2922,14 @@
 
 <body class="home blog wp-custom-logo wp-embed-responsive">
 
-	<div class="wp-site-blocks">
+	<div class="wp-site-blocks" style="overflow-x: hidden;">
 		<header class="wp-block-template-part">
 			<div class="wp-block-group has-primary-background-color has-background is-layout-constrained wp-container-core-group-is-layout-5 wp-block-group-is-layout-constrained"
 				style="border-bottom-color:var(--wp--preset--color--background-alt);border-bottom-width:1px;padding-top:10px;padding-right:var(--wp--preset--spacing--40);padding-bottom:10px;padding-left:var(--wp--preset--spacing--40)">
 				<div class="wp-block-group is-layout-constrained wp-container-core-group-is-layout-4 wp-block-group-is-layout-constrained"
 					style="border-bottom-style:none;border-bottom-width:0px;margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)">
 					<div
-						class="wp-block-group is-content-justification-space-between is-layout-flex wp-container-core-group-is-layout-3 wp-block-group-is-layout-flex">
+						class="sm:justify-center wp-block-group is-content-justification-space-between is-layout-flex wp-container-core-group-is-layout-3 wp-block-group-is-layout-flex">
 						<div
 							class="wp-block-group is-nowrap is-layout-flex wp-container-core-group-is-layout-1 wp-block-group-is-layout-flex">
 							<div class="wp-block-site-logo"><a href="" class="custom-logo-link" rel="home"
@@ -2948,7 +2945,7 @@
 
 
 						<div
-							class="wp-block-group is-content-justification-right is-layout-flex wp-container-core-group-is-layout-2 wp-block-group-is-layout-flex">
+							class="wp-block-group is-content-justification-right is-layout-flex wp-container-core-group-is-layout-2 wp-block-group-is-layout-flex block sm:hidden">
 							<nav class="has-text-color has-background-color has-medium-font-size is-responsive items-justified-space-between fotawp-navigation wp-block-navigation has-open-sans-font-family is-content-justification-space-between is-layout-flex wp-container-core-navigation-is-layout-1 wp-block-navigation-is-layout-flex"
 								aria-label="Navegación de Encabezado" data-wp-interactive="core/navigation"
 								data-wp-context='{"overlayOpenedBy":{"click":false,"hover":false,"focus":false},"type":"overlay","roleAttribute":"","ariaLabel":"Menu"}'>
@@ -2986,7 +2983,7 @@
 													class="wp-block-navigation__container has-text-color has-background-color has-medium-font-size is-responsive items-justified-space-between fotawp-navigation wp-block-navigation has-medium-font-size has-open-sans-font-family">
 													<li
 														class="has-text-color has-background-color has-medium-font-size wp-block-navigation-item current-menu-item wp-block-home-link">
-														<a class="wp-block-home-link__content wp-block-navigation-item__content"
+														<a href="index.html" class="wp-block-home-link__content wp-block-navigation-item__content"
 															rel="home" aria-current="page">Home</a></li>
 												</ul>
 												<ul
@@ -3045,8 +3042,8 @@
 
 
 
-								<h2 class="wp-block-heading has-background-color has-text-color has-link-color has-space-grotesk-font-family wp-elements-57f25b3b59545a8b6a85b42056325dd3"
-									style="font-size:75px;font-style:normal;font-weight:700">Hi, I&#8217;m
+								<h2 class="wp-block-heading has-background-color has-text-color has-link-color has-space-grotesk-font-family wp-elements-57f25b3b59545a8b6a85b42056325dd3 text-[75px] sm:text-6xl md:text-5xl lg:text-6xl xl:text-[75px]"
+									style="font-style:normal;font-weight:700">Hi, I&#8217;m
 									Nico!<br><span style="color:#9b51e0;">Full Stack</span><span style="color:#9b51e0;">
 										Developer</span>
 								</h2>
@@ -3669,10 +3666,10 @@
 
 
 
-						<div class="wp-block-column is-vertically-aligned-center mt-4 aos-fade-left aos-once-false is-layout-flow wp-block-column-is-layout-flow"
+						<div class="wp-block-column is-vertically-aligned-center mt-4 aos-fade-left aos-once-false is-layout-flow wp-block-column-is-layout-flow "
 							data-aos="fade-left" data-aos-once="false">
 							<h2 class="wp-block-heading text-pink-600 has-background-color has-text-color has-link-color has-space-grotesk-font-family wp-elements-2ff1416f4dfcea199ddde856ca2ce993"
-								style="font-size:52px;text-decoration:underline">Let&#8217;s Talk c:</h2>
+								style="font-size:52px;">Let&#8217;s Talk 🤓</h2>
 
 
 
@@ -3681,9 +3678,10 @@
 
 
 
-							<hr
-								class="wp-block-separator has-text-color has-background-color has-alpha-channel-opacity has-background-background-color has-background is-style-default">
+								<hr
+								class="wp-block-separator has-text-color has-background-color has-alpha-channel-opacity has-background-background-color has-background is-style-default mt-[64px]">
 						</div>
+						
 					</div>
 				</div>
 			</div>
@@ -3701,8 +3699,8 @@
 							style="flex-basis:426px">
 							<div
 								class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-5 wp-block-columns-is-layout-flex">
-								<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
-									<figure class="wp-block-image size-full is-resized has-custom-border"><img
+								<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow ">
+									<figure class="wp-block-image size-full is-resized has-custom-border sm:flex sm:items-center sm:justify-center"><img
 											loading="lazy" decoding="async" width="3515" height="3515"
 											src="wp-content/uploads/2024/11/profile-1.jpg" alt="" class="wp-image-10"
 											style="border-radius:100px;object-fit:cover;width:156px;height:156px">
@@ -3711,7 +3709,7 @@
 
 
 
-								<div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow"
+								<div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow sm:flex sm:items-center sm:justify-center sm:text-center"
 									style="flex-basis:238px">
 									<div
 										class="wp-block-group is-content-justification-left is-layout-constrained wp-container-core-group-is-layout-27 wp-block-group-is-layout-constrained">
@@ -3727,7 +3725,7 @@
 
 
 										<ul
-											class="wp-block-social-links has-icon-color has-icon-background-color is-style-default is-layout-flex wp-container-core-social-links-is-layout-1 wp-block-social-links-is-layout-flex">
+											class="sm:flex sm:items-center sm:justify-center wp-block-social-links has-icon-color has-icon-background-color is-style-default is-layout-flex wp-container-core-social-links-is-layout-1 wp-block-social-links-is-layout-flex">
 											<li style="color: #ffffff; background-color: #ffffff00; "
 												class="wp-social-link wp-social-link-linkedin has-background-color has-transparent-background-color wp-block-social-link">
 												<a rel="noopener nofollow" target="_blank"
@@ -3780,7 +3778,7 @@
 
 
 
-						<div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow"
+						<div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow block sm:hidden"
 							style="flex-basis:574px">
 							<nav class="has-medium-font-size is-responsive items-justified-right wp-block-navigation is-content-justification-right is-layout-flex wp-container-core-navigation-is-layout-2 wp-block-navigation-is-layout-flex"
 								aria-label="Navegación de Pie de página" data-wp-interactive="core/navigation"
@@ -3820,7 +3818,7 @@
 													<li
 														class="has-medium-font-size wp-block-navigation-item current-menu-item wp-block-home-link">
 														<a class="wp-block-home-link__content wp-block-navigation-item__content"
-															rel="home" aria-current="page">Home</a></li>
+															href="index.html" rel="home" aria-current="page">Home</a></li>
 													<li
 														class="has-medium-font-size wp-block-navigation-item wp-block-navigation-link">
 														<a class="wp-block-navigation-item__content" href="#about"><span
@@ -3907,14 +3905,7 @@
 	<script id="wp-i18n-js-after">
 		wp.i18n.setLocaleData({ 'text directionltr': ['ltr'] });
 	</script>
-	<script src="wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.0" id="swv-js"></script>
-	<script id="contact-form-7-js-before">var wpcf7 = {
-			"api": {
-				"root": "\/wp-json\/",
-				"namespace": "contact-form-7\/v1"
-			}
-		};</script>
-	<script src="wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.0" id="contact-form-7-js"></script>
+	
 	<script
 		id="page-scroll-to-id-plugin-script-js-extra">var mPS2id_params = { "instances": { "mPS2id_instance_0": { "selector": "a[href*='#']:not([href='#'])", "autoSelectorMenuLinks": "true", "excludeSelector": "a[href^='#tab-'], a[href^='#tabs-'], a[data-toggle]:not([data-toggle='tooltip']), a[data-slide], a[data-vc-tabs], a[data-vc-accordion], a.screen-reader-text.skip-link", "scrollSpeed": 800, "autoScrollSpeed": "true", "scrollEasing": "easeInOutQuint", "scrollingEasing": "easeOutQuint", "forceScrollEasing": "false", "pageEndSmoothScroll": "true", "stopScrollOnUserAction": "false", "autoCorrectScroll": "false", "autoCorrectScrollExtend": "false", "layout": "vertical", "offset": 0, "dummyOffset": "false", "highlightSelector": "", "clickedClass": "mPS2id-clicked", "targetClass": "mPS2id-target", "highlightClass": "mPS2id-highlight", "forceSingleHighlight": "false", "keepHighlightUntilNext": "false", "highlightByNextTarget": "false", "appendHash": "false", "scrollToHash": "true", "scrollToHashForAll": "true", "scrollToHashDelay": 0, "scrollToHashUseElementData": "true", "scrollToHashRemoveUrlHash": "false", "disablePluginBelow": 0, "adminDisplayWidgetsId": "true", "adminTinyMCEbuttons": "true", "unbindUnrelatedClickEvents": "false", "unbindUnrelatedClickEventsSelector": "", "normalizeAnchorPointTargets": "false", "encodeLinks": "false" } }, "total_instances": "1", "shortcode_class": "_ps2id" };</script>
 	<script src="wp-content/plugins/page-scroll-to-id/js/page-scroll-to-id.min.js?ver=1.7.9"

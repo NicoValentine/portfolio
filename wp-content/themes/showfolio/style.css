@@ -107,9 +107,12 @@ body.single #modal-1-content > ul:nth-child(2) , body.single #modal-2-content{
   .showfolio-move-bottom{
     margin-top: 0px !important;
   }
+  .wp-block-navigation__responsive-container-open
+  {
+    display: none
+    }
 }
 body{
   overflow-x: hidden; /* Oculta el scroll horizontal */
   overflow-y: auto;   /* Permite scroll vertical */
 }
-
